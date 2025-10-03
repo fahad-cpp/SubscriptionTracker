@@ -14,62 +14,62 @@
 ### Option 2: Local Server Setup
 
 1. **Using Python (if installed)**:
-   \`\`\`bash
+   ```bash
    cd subtracker
    python -m http.server 8000
    # Open http://localhost:8000
-   \`\`\`
+   ```
 
 2. **Using Node.js (if installed)**:
-   \`\`\`bash
+   ```bash
    cd subtracker
    npx serve .
    # Open http://localhost:5000
-   \`\`\`
+   ```
 
 3. **Using PHP (if installed)**:
-   \`\`\`bash
+   ```bash
    cd subtracker
    php -S localhost:8000
    # Open http://localhost:8000
-   \`\`\`
+   ```
 
 ## 🔧 Full Development Setup
 
 ### Prerequisites
-\`\`\`bash
+```bash
 # Check if you have Node.js installed
 node --version
 
 # Check if you have MongoDB installed
 mongod --version
-\`\`\`
+```
 
 ### Installation Steps
 
 1. **Clone or download the project**
 2. **Install Node.js dependencies** (optional for backend):
-   \`\`\`bash
+   ```bash
    npm init -y
    npm install express mongodb cors dotenv bcryptjs jsonwebtoken
-   \`\`\`
+   ```
 
 3. **Set up MongoDB** (optional for data persistence):
-   \`\`\`bash
+   ```bash
    # Start MongoDB
    mongod
    
    # In another terminal, run setup script
    node scripts/mongodb-setup.js
-   \`\`\`
+   ```
 
 4. **Create environment file** (optional):
-   \`\`\`bash
+   ```bash
    # Create .env file
    MONGODB_URI=mongodb://localhost:27017/subtracker
    JWT_SECRET=your_jwt_secret_here
    PORT=5000
-   \`\`\`
+   ```
 
 ## 📱 Testing on Different Devices
 
